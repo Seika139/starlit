@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // 初期設定のViewページへ
+    // return view('welcome');
+
+    return view('viewsample');
 });
+
+Route::get('index','MusicTableController@index');
